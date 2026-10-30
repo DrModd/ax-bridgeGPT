@@ -1,0 +1,2 @@
+PASS pcm176  | L: f   996.954 (exp   996.959) lvl  -1.00 dBFS THD+N  -135.7 dB | R: f  3000.871 (exp  3000.877) lvl  -1.00 dBFS THD+N  -136.2 dB | audio_on at 20.13 ms (path 2 k 2 fam48 0); 0 drop(s), 100s
+PASS system

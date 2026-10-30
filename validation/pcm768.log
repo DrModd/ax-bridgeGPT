@@ -1,0 +1,2 @@
+PASS pcm768  | L: f   996.985 (exp   996.991) lvl  -1.00 dBFS THD+N  -137.8 dB | R: f 11002.868 (exp 11002.901) lvl  -1.00 dBFS THD+N  -137.5 dB | audio_on at 18.73 ms (path 4 k 4 fam48 1); 0 drop(s), 122s
+PASS system

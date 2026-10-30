@@ -1,0 +1,25 @@
+          ID = a5 ok
+          VERSION = 03 ok
+   21.49 ms  audio_on (input 0)
+          CTRL = 00 ok
+          STATUS = 73 ok
+          RATE = 11 ok
+   64.15 ms  audio_on (input 1)
+          STATUS = 77 ok
+          FORMAT = 80 ok
+          RATE = 01 ok
+  105.41 ms  audio_on (input 2)
+          STATUS = 7b ok
+          RATE = 04 ok
+          STATUS = 7c ok
+          RATE = 00 ok
+          CTRL = 81 ok
+  214.91 ms  audio_on (input 1)
+peak output 0.8910 FS
+PASS tb_mux
+/workspace/scratch/0c75d0de692a/test-runs/mux/tb/tb_mux.v:188: $finish called at 225577578037500 (1fs)
+
+PASS mux seg0: L f   997.033 (exp   997.031)  -6.02 dBFS THD+N -101.6 | R f  3001.106 (exp  3001.093)  -6.02 dBFS THD+N -104.2
+PASS mux seg1: L f  1499.069 (exp  1499.090)  -1.00 dBFS THD+N -136.5 | R f  5003.293 (exp  5003.300)  -1.00 dBFS THD+N -137.2
+PASS mux seg2: L f  2002.924 (exp  2002.910)  -1.00 dBFS THD+N -138.8 | R f  7000.651 (exp  7000.685)  -1.00 dBFS THD+N -139.6
+PASS mux seg3: L f  1499.026 (exp  1499.090)  -1.00 dBFS THD+N -135.5 | R f  5003.325 (exp  5003.300)  -1.00 dBFS THD+N -137.6

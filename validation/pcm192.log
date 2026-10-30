@@ -1,0 +1,2 @@
+PASS pcm192  | L: f  1999.028 (exp  1999.026) lvl  -1.00 dBFS THD+N  -137.6 dB | R: f 17011.167 (exp 17011.221) lvl  -1.00 dBFS THD+N  -134.9 dB | audio_on at 18.71 ms (path 2 k 2 fam48 1); 0 drop(s), 98s
+PASS system

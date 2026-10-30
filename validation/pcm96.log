@@ -1,0 +1,2 @@
+PASS pcm96   | L: f   997.046 (exp   997.052) lvl  -1.00 dBFS THD+N  -137.6 dB | R: f  7003.338 (exp  7003.364) lvl  -1.00 dBFS THD+N  -135.5 dB | audio_on at 18.73 ms (path 1 k 1 fam48 1); 0 drop(s), 99s
+PASS system

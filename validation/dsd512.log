@@ -1,0 +1,3 @@
+  generated DSD 22.5792 MHz in 22s
+PASS dsd512  | L: f   996.987 (exp   996.992) lvl  -6.02 dBFS THD+N  -133.2 dB | R: f  3000.970 (exp  3000.976) lvl  -6.02 dBFS THD+N  -132.9 dB | audio_on at 21.49 ms (path 5 k 5 fam48 0); 0 drop(s), 120s
+PASS system

@@ -1,0 +1,30 @@
+python3 tools/gen_coefs.py --check
+hb_a  N=175 pass -0.0000..+0.0000 dB stop -121.3 dB
+hb_b  N= 91 pass -0.0000..+0.0000 dB stop -120.5 dB
+hd_a  N= 23 pass -0.0000..+0.0000 dB stop -120.4 dB
+hd_b  N= 31 pass -0.0000..+0.0000 dB stop -119.2 dB
+dsd   N= 95 pass -0.0000..+0.0000 dB stop -121.0 dB
+asrc  table 5122 entries (L=40, P=256) peak 6086973
+mkdir -p build
+iverilog -g2005 -Wall -s tb_recovery -o build/recovery.vvp tb/tb_recovery.v rtl/mem.v rtl/afifo.v rtl/in_mux.v rtl/bclk_rx.v rtl/rate_mon.v rtl/dop_det.v rtl/cic5_dsd.v rtl/fir_stage.v rtl/asrc.v rtl/i2s_tx32.v rtl/i2c_slave.v rtl/top.v
+vvp -n build/recovery.vvp
+PASS recovery: overflow clear, resume, live/dead clock switching
+tb/tb_recovery.v:113: $finish called at 376000000 (1ps)
+mkdir -p build
+iverilog -g2005 -Wall -s top -o build/lint.vvp rtl/mem.v rtl/afifo.v rtl/in_mux.v rtl/bclk_rx.v rtl/rate_mon.v rtl/dop_det.v rtl/cic5_dsd.v rtl/fir_stage.v rtl/asrc.v rtl/i2s_tx32.v rtl/i2c_slave.v rtl/top.v
+python3 tb/run_units.py
+PASS fir_stage hd_b (150 outputs)
+PASS fir_stage hd_a (150 outputs)
+PASS fir_stage dsd (150 outputs)
+PASS fir_stage hb_b (600 outputs)
+PASS fir_stage hb_a (600 outputs)
+PASS cic5_dsd R=8 (1200 outputs)
+PASS cic5_dsd R=16 (600 outputs)
+PASS cic5_dsd R=32 (300 outputs)
+PASS cic5_dsd R=64 (150 outputs)
+PASS units
+mkdir -p build
+yosys -p "read_verilog rtl/mem.v rtl/afifo.v rtl/in_mux.v rtl/bclk_rx.v rtl/rate_mon.v rtl/dop_det.v rtl/cic5_dsd.v rtl/fir_stage.v rtl/asrc.v rtl/i2s_tx32.v rtl/i2c_slave.v rtl/top.v; hierarchy -check -top top; proc; opt -fast; memory -nomap; opt -fast; flatten; stat" > build/synth.log
+! grep -iE "error" build/synth.log
+grep -E -q '[$]mul +12$' build/synth.log
+grep -E -q '[$]mem_v2 +14$' build/synth.log

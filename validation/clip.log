@@ -1,0 +1,2 @@
+PASS clip att=0.0 dB: clip flag 1 (exp 1) | L   1.45 dBFS THD+N  -60.8 | R  -1.00 dBFS (exp  -1.00) THD+N -135.5
+PASS clip att=3.5 dB: clip flag 0 (exp 0) | L  -0.49 dBFS THD+N -136.4 | R  -4.50 dBFS (exp  -4.50) THD+N -134.3

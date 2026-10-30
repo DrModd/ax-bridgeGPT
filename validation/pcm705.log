@@ -1,0 +1,2 @@
+PASS pcm705  | L: f   997.002 (exp   997.007) lvl  -1.00 dBFS THD+N  -135.6 dB | R: f  3001.015 (exp  3001.021) lvl  -1.00 dBFS THD+N  -135.8 dB | audio_on at 20.15 ms (path 4 k 4 fam48 0); 0 drop(s), 123s
+PASS system

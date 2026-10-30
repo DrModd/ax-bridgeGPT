@@ -1,0 +1,22 @@
+    0.00 ms  segment 0: mode 0 rate 44100.0
+    0.00 ms  audio_off
+   20.14 ms  audio_on  seg 0 path 0 (expect 0)
+   45.01 ms  audio_off
+   48.00 ms  segment 1: mode 0 rate 96000.0
+   66.73 ms  audio_on  seg 1 path 1 (expect 1)
+   93.00 ms  segment 2: mode 1 rate 2822400.0
+   93.00 ms  audio_off
+  113.48 ms  audio_on  seg 2 path 5 (expect 5)
+  138.00 ms  segment 3: mode 0 rate 768000.0
+  138.00 ms  audio_off
+  157.40 ms  audio_on  seg 3 path 4 (expect 4)
+  183.00 ms  audio_off
+  185.00 ms  segment 4: mode 2 rate 176400.0
+  205.48 ms  audio_on  seg 4 path 5 (expect 5)
+  230.00 ms  segment 5: mode 0 rate 192000.0
+  230.01 ms  audio_off
+  249.38 ms  audio_on  seg 5 path 2 (expect 2)
+peak output 0.8910 FS, locks 6
+PASS tb_switch
+/workspace/scratch/0c75d0de692a/test-runs/switch/tb/tb_switch.v:147: $finish called at 275000000000000 (1fs)
+

@@ -1,0 +1,3 @@
+  generated DSD 5.6448 MHz in 6s
+PASS dop128  | L: f   996.962 (exp   996.967) lvl  -6.02 dBFS THD+N  -133.4 dB | R: f  3000.895 (exp  3000.901) lvl  -6.02 dBFS THD+N  -132.7 dB | audio_on at 21.49 ms (path 5 k 3 fam48 0); 0 drop(s), 116s
+PASS system

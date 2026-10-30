@@ -1,0 +1,2 @@
+PASS pcm384  | L: f   996.977 (exp   996.983) lvl  -1.00 dBFS THD+N  -138.9 dB | R: f  3000.941 (exp  3000.949) lvl  -1.00 dBFS THD+N  -139.1 dB | audio_on at 18.73 ms (path 3 k 3 fam48 1); 0 drop(s), 107s
+PASS system

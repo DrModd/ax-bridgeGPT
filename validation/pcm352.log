@@ -1,0 +1,2 @@
+PASS pcm352  | L: f   997.024 (exp   997.029) lvl  -1.00 dBFS THD+N  -134.7 dB | R: f  3001.081 (exp  3001.087) lvl  -1.00 dBFS THD+N  -135.5 dB | audio_on at 20.15 ms (path 3 k 3 fam48 0); 0 drop(s), 111s
+PASS system
